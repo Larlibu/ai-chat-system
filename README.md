@@ -7,7 +7,8 @@ antwortet (OpenAI oder Google Gemini).
 Ausfuehrliche Architektur-Dokumentation (arc42) und die urspruengliche Aufgabenstellung liegen in
 [`docs/Arc42.md`](docs/Arc42.md) und [`docs/Anforderungen.md`](docs/Anforderungen.md). Hinweise fuer die
 Arbeit mit Claude Code an diesem Repository finden sich in [`CLAUDE.md`](CLAUDE.md).
-Generiertes Javadoc liegt unter `docs/javadoc/index.htm`;
+Generiertes Javadoc liegt unter `docs/javadoc/index.html` und ist online lesbar unter
+https://larlibu.github.io/ai-chat-system/javadoc/ (GitHub Pages, Branch `main`, Ordner `/docs`).
 
 
 
