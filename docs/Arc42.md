@@ -4,6 +4,38 @@
 **Autor:** larlibu  
 **Technologie:** Java 21, Maven, MVC, stdlib, Gemini API
 
+## Inhaltsverzeichnis
+
+- [1. Einführung & Ziele](#1-einführung--ziele)
+  - [1.1 Aufgabenstellung](#11-aufgabenstellung)
+  - [1.2 Qualitätsziele](#12-qualitätsziele)
+  - [1.3 Stakeholder](#13-stakeholder)
+- [2. Randbedingungen](#2-randbedingungen)
+  - [2.1 Technische Randbedingungen](#21-technische-randbedingungen)
+  - [2.2 Fachliche Randbedingungen](#22-fachliche-randbedingungen)
+- [3. Kontextabgrenzung](#3-kontextabgrenzung)
+  - [3.1 Fachlicher Kontext](#31-fachlicher-kontext)
+- [4. Lösungskonzept](#4-lösungskonzept)
+  - [4.1 Architekturprinzipien](#41-architekturprinzipien)
+  - [4.2 Wichtige Bausteine](#42-wichtige-bausteine)
+- [5. Bausteinsicht](#5-bausteinsicht)
+  - [5.1 Paketstruktur](#51-paketstruktur)
+- [6. Laufzeitsicht](#6-laufzeitsicht)
+  - [6.1 Szenario](#61-szenario)
+- [7. Verteilungssicht](#7-verteilungssicht)
+  - [7.1 Deployment](#71-deployment)
+- [8. Querschnittliche Konzepte](#8-querschnittliche-konzepte)
+  - [8.1 MVC und Interfaces](#81-mvc-und-interfaces)
+  - [8.2 Dependency Injection](#82-dependency-injection)
+  - [8.3 Fehlerbehandlung](#83-fehlerbehandlung)
+  - [8.4 Konfiguration](#84-konfiguration)
+- [9. Architekturelle Entscheidungen](#9-architekturelle-entscheidungen)
+- [10. Qualitätsanforderungen](#10-qualitätsanforderungen)
+  - [10.1 Qualitätsziele](#101-qualitätsziele)
+  - [10.2 Qualitätsszenarien](#102-qualitätsszenarien)
+- [11. Risiken und technische Schulden](#11-risiken-und-technische-schulden)
+- [12. Glossar](#12-glossar)
+
 ## 1. Einführung & Ziele
 
 ### 1.1 Aufgabenstellung
