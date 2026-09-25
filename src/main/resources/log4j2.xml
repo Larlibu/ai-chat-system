@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <!-- Override at runtime via environment variables -->
+        <Property name="LOG_DIR">${env:AI_CHAT_LOG_DIR:-logs}</Property>
+        <Property name="LOG_LEVEL">${env:AI_CHAT_LOG_LEVEL:-INFO}</Property>
+        <Property name="PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%t] %c{1.} - %msg%n</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_ERR">
+            <PatternLayout pattern="${PATTERN}"/>
+        </Console>
+
+        <RollingFile name="File"
+                     fileName="${LOG_DIR}/ai-chat.log"
+                     filePattern="${LOG_DIR}/ai-chat-%d{yyyy-MM-dd}-%i.log.gz">
+            <PatternLayout pattern="${PATTERN}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+                <SizeBasedTriggeringPolicy size="5 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- Default: reasonable signal-to-noise. Raise to DEBUG via AI_CHAT_LOG_LEVEL=DEBUG -->
+        <Root level="${LOG_LEVEL}">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+</Configuration>

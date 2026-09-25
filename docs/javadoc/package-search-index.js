@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html","k":"18"},{"l":"de.larlibu.aichat"},{"l":"de.larlibu.aichat.ai"},{"l":"de.larlibu.aichat.controller"},{"l":"de.larlibu.aichat.factory"},{"l":"de.larlibu.aichat.model"},{"l":"de.larlibu.aichat.network"},{"l":"de.larlibu.aichat.service"},{"l":"de.larlibu.aichat.view"}];updateSearchResults();
